@@ -36,7 +36,6 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/image/favicon.ico" type="image/x-icon">
   </head>
   <body class="sec-flow overflow_hidden">
@@ -57,60 +56,45 @@
         </div>
     </div> 
     <!-- navbar -->
-    <div class="bg-lightblue1">
-      <div class="container">
-        <nav class="d-flex justify-content-between">
-          <div class="py-3">
-            <img src="./assets/image/page.svg" alt="pagelogo" />
-          </div>
-          <label id="icon">
-            <span class="cross-4"></span>
-            <span class="cross-5"></span>
-            <span class="cross-6"></span>
-          </label>
-          <ul class="d-flex align-items-center gap-4 nav-box" id="nav-bar">
-            <li>
-              <a
-                href="#How It Works"
-                class="fs-sm fw-normal font-outfit text-lightwhite3 lh-sm1 position-relative f-line"
-                >How It Works</a
-              >
-            </li>
-            <li>
-              <a
-                href="#For Brands"
-                class="fs-sm fw-normal font-outfit text-lightwhite3 lh-sm1 position-relative f-line"
-                >For Brands</a
-              >
-            </li>
-            <li>
-              <a
-                href="#About Us"
-                class="fs-sm fw-normal font-outfit text-lightwhite3 lh-sm1 position-relative f-line"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="#Careers"
-                class="fs-sm fw-normal font-outfit text-lightwhite3 lh-sm1 position-relative f-line"
-                >Careers</a
-              >
-            </li>
-          </ul>
+      <nav class="bg-lightblue py-14">
+            <div class="container">
+                <div class=" d-flex align-items-center justify-content-between ">
+                    <a href=""><img src="./assets/image/page.svg" alt="logo">
+                    </a>
+                    <ul id="navBar" class=" mobileView d-flex align-items-center gap-36 m-0 ps-0 ">
+                        <li><a onclick="removeoverflow()"
+                                class=" text-lightwhite3 f-line fs-sm  font-outfit fw-normal position-relative "
+                                href="#works">How It
+                                Works</a></li>
+                        <li><a onclick="removeoverflow()"
+                                class=" text-lightwhite3 f-line fs-sm  font-outfit fw-normal position-relative "
+                                href="#brands">For
+                                Brands</a></li>
+                        <li><a onclick="removeoverflow()"
+                                class=" text-lightwhite3 f-line fs-sm  font-outfit fw-normal position-relative "
+                                href="#about">About
+                                Us</a></li>
+                        <li><a onclick="removeoverflow()"
+                                class=" text-lightwhite3 f-line fs-sm  font-outfit fw-normal position-relative "
+                                href="#FAQs">Careers</a></li>
+                    </ul>
+                    <div onclick="openNav()" class="menu d-block d-lg-none z-5 ms-3 ms-lg-0">
+                        <span class="nav-line1"></span>
+                        <span class="my-2 nav-line2"></span>
+                        <span class="nav-line3"></span>
+                    </div>
+                </div>
+            </div>
         </nav>
-      </div>
-    </div>
+
     <!-- header -->
     <div class="bg-lightblue min-vh-100 position-relative overflow-x-clip">
-      <span class=" corve-line d-none d-md-block "><svg width="131" height="83" viewBox="0 0 131 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <span class=" corve-line d-none d-lg-block "><svg width="131" height="83" viewBox="0 0 131 83" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M130.169 82.3585C130.169 82.0286 129.249 79.1251 128.131 75.8917C120.041 52.994 106.952 39.0046 91.2987 36.761C86.9578 36.1011 81.8934 36.2991 78.8022 37.1569C78.0129 37.3549 77.0263 36.4311 75.5794 34.0555C71.1069 26.7309 61.9647 19.5382 51.7044 15.1831C43.7461 11.8177 37.6952 10.4319 23.949 8.65028L20.6604 8.25435L24.7383 6.53867C28.8161 4.88898 29.8026 3.89916 29.1449 2.18348C28.4872 0.401817 26.9087 0.533793 21.7128 2.71139C18.8846 3.96515 13.1625 6.07676 9.08472 7.39651C4.94114 8.71626 1.19218 10.168 0.731781 10.6299C-0.715179 12.0816 0.53447 13.4014 5.59885 15.9749C8.36124 17.2947 12.176 19.7362 14.1491 21.3859C17.9638 24.4213 20.4631 24.9492 20.8578 22.7057C21.1866 21.1879 18.4242 18.2185 14.6095 15.7769C13.031 14.7871 11.7813 13.7313 11.7813 13.4014C11.7813 12.5435 26.8429 13.4014 33.3543 14.6552C49.2051 17.6906 62.6882 24.7513 69.923 33.9895C71.5673 36.0352 72.9485 37.9488 72.9485 38.1468C72.9485 38.4107 72.1593 38.8066 71.1727 39.0706C70.1861 39.2686 66.8318 40.7203 63.8063 42.172C51.5071 48.0449 45.3904 58.339 49.0078 66.9834C53.3487 77.4094 67.8841 79.2571 75.9082 70.2828C80.7753 64.9378 82.7484 57.7451 81.5645 49.9586C81.1699 47.451 80.578 44.6795 80.1833 43.6897C79.131 40.9842 79.2626 40.8523 83.2088 40.3244C91.1014 39.3345 101.164 42.7659 108.07 48.7708C114.516 54.3137 122.935 67.8412 126.881 78.8612C127.736 81.1707 128.788 82.9524 129.249 82.9524C129.775 82.9524 130.169 82.6884 130.169 82.3585ZM56.703 70.0188C53.4803 67.5773 52.2306 65.2677 52.2964 61.9023C52.3622 55.6335 57.6896 49.6286 67.2922 45.0095C74.1982 41.7101 74.9217 41.7101 76.1055 45.3394C76.6317 46.9891 77.0263 50.5524 77.0263 53.3239C77.0921 61.3084 73.6062 67.8412 68.0157 70.5467C64.6614 72.1304 59.2024 71.8665 56.703 70.0188Z" fill="white"/>
         </svg>
         </span>
         <span class="hero-elipes pri-style"><img src="./assets/image/hero-elipes.png" alt="hero-elipes"></span>
-        <img 
-          class="w-2156 hero-underline "
-          src="./assets/image/hero-underline.png"
+        <img class="w-2156 hero-underline " src="./assets/image/hero-underline.png"
           alt="underline"
         />
        
@@ -133,8 +117,8 @@
               Cloopp App.
             </p>
             <div class="pt-4 pb-128 gap-4 d-flex flex-column flex-md-row ">
-              <a href="https://www.apple.com/in/app-store/" target="_blank"><img src="./assets/image/appstore.png" alt="aapstore" /></a>
-              <a href="https://play.google.com/store/games?hl=en_IN&gl=US&pli=1" target="_blank"><img src="./assets/image/googleplay.png" alt="googleplay" /></a>
+              <a href="https://www.apple.com/in/app-store/" target="_blank"><img src="./assets/image/appstore.png" alt="aapstore"/></a>
+              <a href="https://play.google.com/store/games?hl=en_IN&gl=US&pli=1" target="_blank"><img src="./assets/image/googleplay.png" alt="googleplay"/></a>
             </div>
             <span class="star-elipes pri-style"><svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.2" d="M14.9039 2.13565C14.8028 0.534387 16.5336 -0.528168 17.9157 0.286686L45.1403 16.3372C45.485 16.5404 45.8827 16.6356 46.2821 16.6104L77.823 14.6178C79.4243 14.5167 80.4868 16.2474 79.672 17.6296L63.6214 44.8542C63.4182 45.1989 63.3231 45.5966 63.3483 45.996L65.3408 77.5369C65.442 79.1381 63.7112 80.2007 62.3291 79.3859L35.1045 63.3353C34.7598 63.1321 34.362 63.0369 33.9627 63.0622L2.42177 65.0547C0.820504 65.1559 -0.242051 63.4251 0.572803 62.043L16.6233 34.8184C16.8266 34.4737 16.9217 34.0759 16.8965 33.6765L14.9039 2.13565Z" fill="#D1D1D1"/>
@@ -142,16 +126,14 @@
               </span>
           </div>
           <div class="col-lg-6 col-12 pt-78 order-1 order-lg-2 ">
-            <img class="w-100 " src="./assets/image/detergent.png" alt="detergent" />
+            <img class="w-100 " src="./assets/image/detergent.png" alt="detergent"/>
           </div>
         </div>
       </div>
     </div>
     <!-- Creating -->
-    <section class="position-relative overflow-x-clip">
-        <img
-          class="w-2156 creation-sec-2"
-          src="./assets/image/creation-sec-underline.png"
+    <section id="works" class="position-relative overflow-x-clip">
+        <img class="w-2156 creation-sec-2" src="./assets/image/creation-sec-underline.png"
           alt="creation-sec-underline"
         />
         <span class="sec-1-elipes pri-style"><img src="./assets/image/sec-1-elipes.png" alt="sec"></span>
@@ -163,7 +145,7 @@
         </h2>
         <div class="row pt-5 align-items-center ">
           <div  class="col-lg-6 col-12 d-flex justify-content-center align-items-center ">
-            <div><img class="w-100" src="./assets/image/mobile.png" alt="mobile" /></div>
+            <div><img class="w-100" src="./assets/image/mobile.png" alt="mobile"/></div>
           </div>
           <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center align-items-lg-start ">
             <div class="small-circle d-flex justify-content-center">
@@ -202,7 +184,7 @@
       </div>
     </section>
     <!-- Recycling -->
-    <section class="bg-lightblue">
+    <section id="brands" class="bg-lightblue">
       <div class="container pt-lg-185 pt-78 ">
         <div class="row  ">
           <div class="col-lg-6 col-12 order-2 order-lg-1 mx-auto mx-lg-0 ">
@@ -238,7 +220,7 @@
                             </svg>
                             </span>
                       <div>
-                          <button class="fs-md fw-medium lh-md1 font-outfit py-20" id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Track Your Environmental Impactx`</span><span class="icon" aria-hidden="true"></span></button>
+                          <button class="fs-md fw-medium lh-md1 font-outfit py-20" id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Track Your Environmental Impactx`</span><span class="icon" aria-hidden="true"></span></button>
                           <div class="accordion-content">
                             <p class=" fw-normal fs-sm lh-md text-lightwhite font-outfit max-w-402">Cloopp partners with amazing brands to bring you coupons and deals you simply can’t get anywhere else.</p>
                           </div>
@@ -252,7 +234,7 @@
                         </svg>                        
                         </span>
                   <div>
-                      <button class="fs-md fw-medium lh-md1 font-outfit py-20" id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Feel Good</span><span class="icon" aria-hidden="true"></span></button>
+                      <button class="fs-md fw-medium lh-md1 font-outfit py-20" id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Feel Good</span><span class="icon" aria-hidden="true"></span></button>
                       <div class="accordion-content">
                         <p class=" fw-normal fs-sm lh-md text-lightwhite font-outfit max-w-402">Cloopp partners with amazing brands to bring you coupons and deals you simply can’t get anywhere else.</p>
                       </div>
@@ -266,9 +248,10 @@
           </div>
         </div>
       </div>
+      
     </section>
     <!-- Frequently -->
-    <section class="bg-white overflow-x-clip position-relative ">
+    <section id="FAQs" class="bg-white overflow-x-clip position-relative ">
       <img class="faq-elipes pri-style" src="./assets/image/faq-elipes.png" alt="faq-elipes">
         <img class="w-2156 faq-hading-img" src="./assets/image/faq-heading-img.png" alt="faq-heading-img">
         <img class="w-2156  faq-underline-img" src="./assets/image/faq-underline-img.png" alt="faq-underline-img">
@@ -335,7 +318,7 @@
       </div>
   </section>
     <!-- input -->
-    <section class="bg-lightblue min-h-subscribe d-flex justify-content-center align-items-center py-163 position-relative overflow-x-clip">
+    <section id="about" class="bg-lightblue min-h-subscribe d-flex justify-content-center align-items-center py-163 position-relative overflow-x-clip">
       <img class="input-left-elipes pri-style" src="./assets/image/input-left-elipes.png" alt="left">
       <img class="input-right-elipes pri-style" src="./assets/image/input-right-elipes.png" alt="left">
       <div class="container">
@@ -363,10 +346,10 @@
           <div class="row">
             <div class="col-lg-4 col-6">
               <ul>
-                <li><a href="" class=" fw-normal fs-sm font-outfit lh-sm1 text-grey position-relative f-line">About Us</a></li>
-                <li class="pt-3"><a href="" class=" fw-normal fs-sm font-outfit lh-sm1 text-grey position-relative f-line">How It Works</a></li>
-                <li class="pt-3"><a href="" class=" fw-normal fs-sm font-outfit lh-sm1 text-grey position-relative f-line">For Brands</a></li>
-                <li class="pt-3"><a href="" class=" fw-normal fs-sm font-outfit lh-sm1 text-grey position-relative f-line">FAQs</a></li>
+                <li><a href="#about" class=" fw-normal fs-sm font-outfit lh-sm1 text-grey position-relative f-line">About Us</a></li>
+                <li class="pt-3"><a href="#works" class=" fw-normal fs-sm font-outfit lh-sm1 text-grey position-relative f-line">How It Works</a></li>
+                <li class="pt-3"><a href="#brands" class=" fw-normal fs-sm font-outfit lh-sm1 text-grey position-relative f-line">For Brands</a></li>
+                <li class="pt-3"><a href="#FAQs" class=" fw-normal fs-sm font-outfit lh-sm1 text-grey position-relative f-line">FAQs</a></li>
               </ul>
             </div>
             <div class="col-lg-4 col-6">
@@ -415,12 +398,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script> AOS.init({
-      duration: 2000,
-      once: true,
-  });</script>
     <script src="./assets/js/app.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       // preloader
     

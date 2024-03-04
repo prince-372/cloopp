@@ -93,6 +93,10 @@
 .br-10 {
   border-radius: 10px;
 }
+.py-14 {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
 .gap-10 {
   gap: 10px;
 }
@@ -102,8 +106,9 @@
 .pb-80 {
   padding-bottom: 80px;
 }
-
-
+.gap-36 {
+  gap: 36px;
+}
 
 /* image */
 .hero-underline {
@@ -327,7 +332,7 @@ input {
 .disply_block {
   display: block;
 }
-.overflow_hidden{
+.overflow_hidden {
   overflow: hidden;
 }
 /* button */
@@ -343,9 +348,14 @@ input {
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: 0;
+  z-index: 3;
+  transition: 0.5s;
 }
-
+.join-btn:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: white;
+}
 
 /* nav */
 ul {
@@ -473,46 +483,75 @@ ul {
   }
 }
 
-@media (max-width: 992px) {
-  label[id="icon"] {
-    width: 30px;
-    height: 24px;
-    cursor: pointer;
-    display: flex;
+@media (max-width: 991.9px) {
+  .mobileView {
     position: absolute;
-    right: 2%;
-    top: 6%;
-    justify-content: space-between;
-    flex-direction: column;
-    z-index: 5;
-    align-items: center;
-  }
-
-  label[id="icon"] > span {
+    background-color: var(--lightblue);
+    min-height: 100vh;
     width: 100%;
-    height: 5px;
-    background: #fff;
-  }
-
-  .nav-box {
-    flex-direction: column !important;
-    justify-content: center;
-    align-items: center;
     top: 0;
     left: -100%;
-    position: fixed;
-    opacity: 1;
-    width: 100%;
-    max-width: 400px;
-    height: 100%;
-    background: #0073b1;
-    z-index: 3;
-    box-shadow: 0px 0px 19px 9px rgba(0, 0, 0, 0.1);
-    transition: all 500ms linear;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms linear;
+    z-index: 4;
   }
 
-  .fix-lft {
-    left: 0;
+  .z-5 {
+    z-index: 5;
+  }
+
+  .overflow_hidden {
+    overflow: hidden !important;
+  }
+
+  .menu span.nav-line1 {
+    height: 2px;
+    width: 30px;
+    background-color: #fff;
+    display: block;
+    border-radius: 20px;
+  }
+
+  .menu span.nav-line2 {
+    height: 2px;
+    width: 30px;
+    background-color: #fff;
+    display: block;
+    border-radius: 20px;
+  }
+
+  .menu span.nav-line3 {
+    height: 2px;
+    width: 30px;
+    background-color: white;
+    display: block;
+    border-radius: 20px;
+  }
+
+  .menu span {
+    transition: 300ms linear;
+  }
+
+  .cross span.nav-line1 {
+    transform: rotate(42deg) translateY(13px);
+    transition: 300ms linear;
+    background-color: #fff;
+    width: 30px;
+  }
+
+  .cross span.nav-line2 {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 300ms linear;
+  }
+
+  .cross span.nav-line3 {
+    transform: rotate(-43deg) translateY(-13px);
+    transition: 300ms linear;
+    background-color: #fff;
+    width: 30px;
   }
 }
 
@@ -540,5 +579,4 @@ ul {
     padding-left: 20px;
     padding-right: 20px;
   }
- 
 }
