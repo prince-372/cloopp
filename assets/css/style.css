@@ -250,6 +250,7 @@
   left: 5px;
   width: 10px;
   height: 2px;
+  border-radius: 1px;
   background: currentColor;
 }
 .accordion-plus button .icon::after {
@@ -260,6 +261,7 @@
   left: 9px;
   width: 2px;
   height: 10px;
+  border-radius: 1px;
   background: currentColor;
 }
 
