@@ -1,0 +1,155 @@
+:root {
+  /* font-size  */
+  --fs-sm: 16px;
+  --fs-sm1: 14px;
+  --fs-md: 18px;
+  --fs-lg: 32px;
+  --fs-lg1: 30px;
+  --fs-xl: 30px;
+  --fs-xxl: 38px;
+
+  /* color  */
+  --lightblue: #0073b1;
+  --lightblue1: #0576b3;
+  --grey: #cfcfcf;
+  --lightblack: #3d3d3d;
+  --black2: #0d0d0d;
+  --orange: #f8b762;
+  --lightwhite: #e5f1f7;
+  --lightwhite2: #cce3ef;
+  --lightwhite3: #cfe5f0;
+
+  /* line-hight */
+
+  --lh-sm: 15.4px;
+  --lh-sm1: 17.6px;
+  --lh-md: 24px;
+  --lh-md1: 22.72px;
+  --lh-md2: 35.2px;
+  --lh-lg: 34.4px;
+  --lh-xl: 83.2px;
+  --lh-xxl: 100px;
+}
+
+/* / font size  */
+
+.fs-sm {
+  font-size: var(--fs-sm);
+}
+.fs-sm1 {
+  font-size: var(--fs-sm1);
+}
+
+.fs-md {
+  font-size: var(--fs-md);
+}
+
+.fs-lg {
+  font-size: var(--fs-lg);
+}
+
+.fs-lg1 {
+  font-size: var(--fs-lg1);
+}
+
+.fs-xl {
+  font-size: var(--fs-xl);
+}
+
+.fs-xxl {
+  font-size: var(--fs-xxl);
+}
+
+/* / color */
+
+.text-lightblue {
+  color: var(--lightblue);
+}
+
+.text-lightblue1 {
+  color: var(--lightblue1);
+}
+
+.text-grey {
+  color: var(--grey);
+}
+
+.text-lightblack {
+  color: var(--lightblack);
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.text-lightwhite {
+  color: var(--lightwhite);
+}
+
+.text-lightwhite2 {
+  color: var(--lightwhite2);
+}
+
+.text-lightwhite3 {
+  color: var(--lightwhite3);
+}
+
+.bg-lightblue {
+  background-color: var(--lightblue);
+}
+
+.bg-lightblue1 {
+  background-color: var(--lightblue1);
+}
+.bg-black2 {
+  background-color: var(--black2);
+}
+
+/* line-hight */
+.lh-sm {
+  line-height: var(--lh-sm);
+}
+.lh-sm1 {
+  line-height: var(--lh-sm1);
+}
+.lh-md {
+  line-height: var(--lh-md);
+}
+.lh-md1 {
+  line-height: var(--lh-md1);
+}
+.lh-md2 {
+  line-height: var(--lh-md2);
+}
+.lh-lg1 {
+  line-height: var(--lh-lg) !important;
+}
+.lh-xl {
+  line-height: var(--lh-xl);
+}
+.lh-xxl {
+  line-height: var(--fs-xxl);
+}
+
+@media (min-width: 992px) {
+  :root {
+    /* font-size  */
+    --fs-sm: 16px;
+    --fs-sm1: 14px;
+    --fs-md: 24px;
+    --fs-lg: 32px;
+    --fs-lg1: 52px;
+    --fs-xl: 64px;
+    --fs-xxl: 80px;
+
+    /* line-height */
+    --lh-sm: 15.4px;
+    --lh-sm1: 17.6px;
+    --lh-md: 24px;
+    --lh-md1: 30.72px;
+    --lh-md2: 35.2px;
+    --lh-lg: 62.4px;
+    --lh-xl: 83.2px;
+    --lh-xxl: 100px;
+  }
+}

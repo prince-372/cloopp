@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Over+the+Rainbow&display=swap");
+@import url("./root.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+
+.font-rainbow {
+  font-family: "Over the Rainbow", cursive;
+}
+
+.font-outfit {
+  font-family: "Outfit", sans-serif;
+}
+
+/* max-width */
+.max-w-630 {
+  max-width: 630px;
+}
+.max-w-448 {
+  max-width: 448px;
+}
+.max-w-675 {
+  max-width: 675px;
+}
+.w-2156 {
+  width: 2156px;
+}
+.max-w-471 {
+  max-width: 471px;
+}
+.max-w-345 {
+  max-width: 345px;
+}
+.max-w-503 {
+  max-width: 503px;
+}
+.max-w-513 {
+  max-width: 513px;
+}
+.max-w-402 {
+  max-width: 402px;
+}
+/* spacing */
+.pt-78 {
+  padding-top: 78px;
+}
+.py-163 {
+  padding-top: 163px;
+  padding-bottom: 163px;
+}
+.px-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.pt-12 {
+  padding-top: 12px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pt-116 {
+  padding-top: 116px;
+}
+.px-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.pb-40 {
+  padding-bottom: 40px;
+}
+.pt-185 {
+  padding-top: 185px;
+}
+.pb-166 {
+  padding-bottom: 166px;
+}
+.pb-128 {
+  padding-bottom: 128px;
+}
+.pl-20 {
+  padding-left: 20px;
+}
+.br-10 {
+  border-radius: 10px;
+}
+.gap-10 {
+  gap: 10px;
+}
+.pt-100 {
+  padding-top: 100px;
+}
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+
+
+/* image */
+.hero-underline {
+  position: absolute;
+  height: 140px;
+  bottom: -5%;
+  z-index: 1;
+}
+.creation-sec-2 {
+  height: 140px;
+  position: absolute;
+  bottom: -4%;
+}
+.footer-headling-img {
+  position: absolute;
+  height: 140px;
+  top: -17%;
+  z-index: 1;
+}
+.faq-hading-img {
+  position: absolute;
+  height: 140px;
+  top: -14%;
+}
+.faq-underline-img {
+  position: absolute;
+  height: 140px;
+  bottom: -9%;
+  z-index: 2;
+}
+.overflow-x-clip {
+  overflow-x: clip;
+}
+
+/* ellipse */
+.star-elipes {
+  position: absolute;
+  top: -24%;
+  left: 6%;
+}
+.corve-line {
+  position: absolute;
+  bottom: 30%;
+  left: 45%;
+}
+.hero-elipes {
+  position: absolute;
+  right: 0%;
+  bottom: 17%;
+}
+
+.sec-1-elipes {
+  position: absolute;
+  left: 0;
+  top: 20%;
+}
+.faq-elipes {
+  position: absolute;
+  right: 0;
+  top: 8%;
+}
+.input-left-elipes {
+  position: absolute;
+  left: 0%;
+  top: -25%;
+}
+.input-right-elipes {
+  position: absolute;
+  right: 0%;
+  bottom: -25%;
+}
+/* other */
+
+.small-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  background-color: #15231f;
+  padding: 5px 16px;
+}
+.footer-icon {
+  transition: all 300ms linear;
+  width: 24px;
+  height: 24px;
+  display: flex;
+}
+
+.footer-icon:hover {
+  transform: translateY(-10px) scale(0.9);
+}
+
+.footer-line::after {
+  position: absolute;
+  top: 0;
+  left: -28%;
+  content: "";
+  display: flex;
+  width: 2156px;
+  height: 1px;
+  background-color: #fff;
+}
+
+/* accordian */
+.accordion-plus .accordion-item {
+  background-color: transparent;
+  display: flex;
+  border: 1px solid #a4a4a4;
+  border-radius: 10px !important;
+}
+
+.accordion-plus button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  color: #fff;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion-plus button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion-plus button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 27px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 22px;
+}
+.accordion-plus button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion-plus button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion-plus button[aria-expanded="true"] .icon::after {
+  width: 0;
+}
+.accordion-plus button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion-plus .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid #a4a4a4 !important;
+}
+.accordion-plus button .accordion-title {
+  padding: unset !important;
+}
+/* input */
+input {
+  outline: unset !important;
+  border: 1px solid #c5c5c5;
+  color: #cce3ef;
+  position: relative;
+  z-index: 2;
+  padding-right: 100px;
+}
+
+::placeholder {
+  color: #cce3ef;
+}
+
+/* preloder */
+
+.loader_bg {
+  z-index: 9;
+}
+
+.d_none {
+  display: none !important;
+}
+.pri-style {
+  animation: preloder_one 7s infinite;
+}
+
+/* backtotop */
+.backto-top {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  display: none;
+}
+
+.z-5 {
+  z-index: 5;
+}
+
+.disply_none {
+  display: none;
+}
+
+.disply_block {
+  display: block;
+}
+.overflow_hidden{
+  overflow: hidden;
+}
+/* button */
+.join-btn {
+  background-color: white;
+  color: var(--blue);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+
+/* nav */
+ul {
+  padding-left: unset !important;
+}
+
+.cross-1 {
+  rotate: 45deg;
+  transition: 0.4s;
+}
+
+.cross-2 {
+  position: relative;
+  transition: 0.4s;
+  top: -80%;
+  rotate: -45deg;
+}
+
+.cross-3 {
+  display: none !important;
+}
+
+.cross-4 {
+  transition: 0.4s;
+}
+
+.cross-5 {
+  transition: 0.4s;
+}
+
+.cross-6 {
+  transition: 0.4s;
+}
+
+.flow-hidden {
+  overflow: hidden;
+}
+
+.f-line::before {
+  content: "";
+  position: absolute;
+
+  width: 0;
+  height: 2px;
+  border-radius: 15px;
+  background: #cfe5f0;
+  right: 0;
+  bottom: -10%;
+  transition: 0.5s;
+}
+
+.f-line:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+/* faq accordion */
+.accordion .accordion-item {
+  border-radius: 10px !important;
+  border: 1px solid #c5c5c5 !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: unset !important;
+}
+
+.accordion .accordion-item .accordion-button {
+  padding: unset !important;
+  font-size: var(--fs-md) !important;
+  font-family: "outfit" !important;
+  font-weight: 500;
+  color: black !important;
+}
+
+.accordion .accordion-item .accordion-body {
+  padding-left: unset !important;
+  max-width: 758px;
+  font-weight: 400 !important;
+  font-size: var(--fs-sm) !important;
+  font-family: "outfit" !important;
+  color: var(--lightblack);
+}
+
+.accordion-button:focus {
+  box-shadow: unset !important;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+@keyframes preloder_one {
+  0% {
+    transform: scale(1.1);
+  }
+
+  15% {
+    transform: scale(0.9);
+  }
+
+  30% {
+    transform: scale(1.2);
+  }
+
+  45% {
+    transform: scale(1);
+  }
+
+  60% {
+    transform: scale(1.3);
+  }
+
+  75% {
+    transform: scale(0.9);
+  }
+
+  90% {
+    transform: scale(1.3);
+  }
+}
+
+@media (max-width: 992px) {
+  label[id="icon"] {
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    right: 2%;
+    top: 6%;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 5;
+    align-items: center;
+  }
+
+  label[id="icon"] > span {
+    width: 100%;
+    height: 5px;
+    background: #fff;
+  }
+
+  .nav-box {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    position: fixed;
+    opacity: 1;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    background: #0073b1;
+    z-index: 3;
+    box-shadow: 0px 0px 19px 9px rgba(0, 0, 0, 0.1);
+    transition: all 500ms linear;
+  }
+
+  .fix-lft {
+    left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .pb-sm-73 {
+    padding-bottom: 73px;
+  }
+  .creation-sec-2 {
+    height: 140px;
+    position: absolute;
+    bottom: -13%;
+  }
+  .faq-hading-img {
+    position: absolute;
+    height: 140px;
+    top: -17%;
+  }
+  .pt-lg-100 {
+    padding-top: 100px;
+  }
+  .pt-lg-185 {
+    padding-top: 185px;
+  }
+  .px-lg-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+ 
+}
