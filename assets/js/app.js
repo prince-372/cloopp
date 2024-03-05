@@ -31,13 +31,11 @@ function openNav() {
   document.getElementById("navBar").classList.toggle("start-0");
   document.body.classList.toggle("overflow-hidden");
   document.querySelector(".menu").classList.toggle("cross");
-  document.querySelector(".nav-bg").classList.toggle("backflt");
 }
 
 function removeoverflow() {
   document.getElementById("navBar").classList.toggle("start-0");
   document.body.classList.remove("overflow-hidden");
   document.querySelector(".menu").classList.toggle("cross");
-  document.querySelector(".nav-bg").classList.toggle("backflt");
   document.body.classList.remove("overflow-hidden");
 }
