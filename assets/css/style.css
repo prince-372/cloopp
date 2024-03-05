@@ -45,6 +45,9 @@
 .max-w-402 {
   max-width: 402px;
 }
+.max-w-957{
+  max-width: 957px;
+}
 /* spacing */
 .pt-78 {
   padding-top: 78px;
@@ -146,7 +149,7 @@
 /* ellipse */
 .star-elipes {
   position: absolute;
-  top: -11%;
+  top: 10%;
   left: 6%;
 }
 .corve-line {
