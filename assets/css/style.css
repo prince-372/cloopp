@@ -30,6 +30,9 @@
 .w-2156 {
   width: 2156px;
 }
+.min-h-subscribe {
+  min-height: 465px;
+}
 .max-w-471 {
   max-width: 471px;
 }
@@ -176,7 +179,7 @@
 .input-left-elipes {
   position: absolute;
   left: 0%;
-  top: -23%;
+  top: -14%;
 }
 .input-right-elipes {
   position: absolute;
@@ -324,6 +327,9 @@ input {
 .pri-style {
   animation: preloder_one 7s infinite;
 }
+.scrool-line {
+  animation: scroll 7s infinite;
+}
 
 /* backtotop */
 .backto-top {
@@ -368,11 +374,10 @@ input {
   border: 1px solid #fff;
   color: white;
 }
-.app-icon{
+.app-icon {
   transition: all 300ms linear;
 }
-.app-icon:hover{
-
+.app-icon:hover {
   transform: translateY(10px) scale(0.9);
 }
 
@@ -469,7 +474,7 @@ ul {
   }
 
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-20px * 7));
   }
 }
 @keyframes preloder_one {
@@ -597,5 +602,11 @@ ul {
   .px-lg-20 {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .min-h-subscribe {
+    min-height: 700px;
   }
 }
